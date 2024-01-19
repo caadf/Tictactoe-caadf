@@ -18,7 +18,7 @@ const Weapon = () => {
     ])
     //const [tablero, setTablero] = useState(Array.from({ length: 9 }, () => null))
     const [tablero, setTablero] = useState(new Array(9).fill(null))
-
+    const [winner, setWinner] = useState(false)
     //funciones
     const juego = (index) => {
         const board = [...tablero]
@@ -30,32 +30,43 @@ const Weapon = () => {
             } else {
                 setSeleccionArma("X")
             }
-            obtenerwinner(index)
+            obtenerwinner(index, board)
         }
 
     }
-    const obtenerwinner = (index) => {
+    const obtenerwinner = (index, board) => {
         let opciones = wins.filter((opcion) => {
             return opcion.includes(index)
         })
         console.log(opciones)
         /* inicio */
 
+        /* aqui va mi codigo */
 
-/* aqui va mi codigo */
-
-
-
+        for (let i = 0; i < opciones.length; i++) {
+            const [a, b, c] = opciones[i]
+            if (board[a] === board[b] && board[b] === board[c]) {
+                setWinner(true);
+            }
+        }
 
 
         /* fin */
     }
-
-
-
+    let total = tablero.reduce((i, valor) => valor !== null ? i + 1 : i + 0, 0)
 
     return (
         <>
+
+            {
+                winner ?
+                    (total % 2 === 0) ?
+
+                        "Hay ganador:" + jugador2
+                        :
+                        "Hay ganador:" + jugador1
+                    : null
+            }
             {
                 (seleccionArma !== '' && jugador1 !== '' && jugador2 !== '') ?
                     (
