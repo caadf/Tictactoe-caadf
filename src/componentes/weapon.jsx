@@ -70,27 +70,31 @@ const Weapon = () => {
             {
                 (seleccionArma !== '' && jugador1 !== '' && jugador2 !== '') ?
                     (
-                        <div className='Tablero'>
-                            <div className='row'>
-                                <div className='col-3 posicion1' onClick={() => juego(0)}>{tablero[0]}</div>
-                                <div className='col-3 posicion2' onClick={() => juego(1)}>{tablero[1]}</div>
-                                <div className='col-3 posicion3' onClick={() => juego(2)}>{tablero[2]}</div>
+                        <div className='tablero'>
+                            <div className='fila'>
+                                <div className='posicion1' onClick={() => juego(0)}>{tablero[0]}</div>
+                                <div className='posicion2' onClick={() => juego(1)}>{tablero[1]}</div>
+                                <div className='posicion3' onClick={() => juego(2)}>{tablero[2]}</div>
                             </div>
-                            <div className='row '>
-                                <div className='col-3 posicion4' onClick={() => juego(3)}>{tablero[3]}</div>
-                                <div className='col-3 posicion5' onClick={() => juego(4)}>{tablero[4]}</div>
-                                <div className='col-3 posicion6' onClick={() => juego(5)}>{tablero[5]}</div>
+                            <div className='fila'>
+                                <div className='posicion4' onClick={() => juego(3)}>{tablero[3]}</div>
+                                <div className='posicion5' onClick={() => juego(4)}>{tablero[4]}</div>
+                                <div className='posicion6' onClick={() => juego(5)}>{tablero[5]}</div>
                             </div>
-                            <div className='row'>
-                                <div className='col-3 posicion6' onClick={() => juego(6)}>{tablero[6]}</div>
-                                <div className='col-3 posicion7' onClick={() => juego(7)}>{tablero[7]}</div>
-                                <div className='col-3 posicion9' onClick={() => juego(8)}>{tablero[8]}</div>
+                            <div className='fila'>
+                                <div className='posicion7' onClick={() => juego(6)}>{tablero[6]}</div>
+                                <div className='posicion8' onClick={() => juego(7)}>{tablero[7]}</div>
+                                <div className='posicion9' onClick={() => juego(8)}>{tablero[8]}</div>
                             </div>
                         </div>
-                    ) : (
+                    ) : 
+                    (
 
                         <div className='juego'>
                             <div className="players">
+                                <h1>TicTacToe in React js</h1>
+                               
+                               <div className="box">
                                 <h3>Choose your weapon</h3>
 
                                 <input
@@ -115,6 +119,7 @@ const Weapon = () => {
                                 <button className="boton" onClick={() => setSeleccionArma('O')}>
                                     O
                                 </button>
+                                </div>
                             </div>
                         </div>
                     )
