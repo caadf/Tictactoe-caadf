@@ -113,10 +113,10 @@ const Weapon = () => {
                                         setJugador2(e.target.value);
                                     }}
                                 />
-                                <button className="boton" onClick={() => setSeleccionArma('X')}>
+                                <button className="boton1" onClick={() => setSeleccionArma('X')}>
                                     X
                                 </button>
-                                <button className="boton" onClick={() => setSeleccionArma('O')}>
+                                <button className="boton2" onClick={() => setSeleccionArma('O')}>
                                     O
                                 </button>
                                 </div>
