@@ -24,6 +24,11 @@ body{
     border-bottom: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion2{
     width: 100px;
@@ -32,6 +37,11 @@ body{
     border-bottom:2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion3{
     width: 100px;
@@ -40,6 +50,11 @@ body{
     border-left: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion4{
     width: 100px;
@@ -48,6 +63,11 @@ body{
     border-bottom: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion5{
     width: 100px;
@@ -56,6 +76,11 @@ body{
     border-bottom: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion6{
     width: 100px;
@@ -64,6 +89,11 @@ body{
     border-left: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion7{
     width: 100px;
@@ -72,6 +102,11 @@ body{
     border-right: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
   
 }
 .posicion8{
@@ -80,6 +115,11 @@ body{
     border:0;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
 .posicion9{
     width: 100px;
@@ -87,7 +127,13 @@ body{
     border-left: 2px solid black;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:900;
 }
+
 .juego {
     margin: auto;
     display: flex;
@@ -120,9 +166,25 @@ h3{
     margin-left: 50px;
 }
 
+.botones{
+    font-size: 40px;
+
+}
+
 .boton1{
     color:rgb(218, 218, 46);
+   margin-left: 60px;
+   width: 70px;
 }
 .boton2{
     color:blue;
+    margin-left: 100px;
+    width: 70px;
+   
+}
+p {
+    margin-top: 50px;
+    text-align: center;
+    color: green;
+    font-size: 30px;
 }

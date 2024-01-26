@@ -57,16 +57,17 @@ const Weapon = () => {
 
     return (
         <>
+            <p>
+                {
+                    winner ?
+                        (total % 2 === 0) ?
 
-            {
-                winner ?
-                    (total % 2 === 0) ?
-
-                        "Hay ganador:" + jugador2
-                        :
-                        "Hay ganador:" + jugador1
-                    : null
-            }
+                            "Hay ganador:" + jugador2
+                            :
+                            "Hay ganador:" + jugador1
+                        : null           
+                } 
+            </p>
             {
                 (seleccionArma !== '' && jugador1 !== '' && jugador2 !== '') ?
                     (
@@ -87,38 +88,40 @@ const Weapon = () => {
                                 <div className='posicion9' onClick={() => juego(8)}>{tablero[8]}</div>
                             </div>
                         </div>
-                    ) : 
+                    ) :
                     (
 
                         <div className='juego'>
                             <div className="players">
                                 <h1>TicTacToe in React js</h1>
-                               
-                               <div className="box">
-                                <h3>Choose your weapon</h3>
 
-                                <input
-                                    type="text"
-                                    placeholder="player1"
-                                    value={jugador1}
-                                    onChange={(e) => {
-                                        setJugador1(e.target.value);
-                                    }}
-                                />
-                                <input
-                                    type="text"
-                                    placeholder="player2"
-                                    value={jugador2}
-                                    onChange={(e) => {
-                                        setJugador2(e.target.value);
-                                    }}
-                                />
-                                <button className="boton1" onClick={() => setSeleccionArma('X')}>
-                                    X
-                                </button>
-                                <button className="boton2" onClick={() => setSeleccionArma('O')}>
-                                    O
-                                </button>
+                                <div className="box">
+                                    <h3>Choose your weapon</h3>
+
+                                    <input
+                                        type="text"
+                                        placeholder="player1"
+                                        value={jugador1}
+                                        onChange={(e) => {
+                                            setJugador1(e.target.value);
+                                        }}
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder="player2"
+                                        value={jugador2}
+                                        onChange={(e) => {
+                                            setJugador2(e.target.value);
+                                        }}
+                                    />
+                                    <div className="botones">
+                                        <button className="boton1" onClick={() => setSeleccionArma('X')}>
+                                            X
+                                        </button>
+                                        <button className="boton2" onClick={() => setSeleccionArma('O')}>
+                                            O
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
