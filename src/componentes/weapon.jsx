@@ -65,8 +65,11 @@ const Weapon = () => {
                             "Hay ganador:" + jugador2
                             :
                             "Hay ganador:" + jugador1
-                        : null           
-                } 
+                        : total === 9 ?
+                            "Hay Empate:"
+                            : null
+
+                }
             </p>
             {
                 (seleccionArma !== '' && jugador1 !== '' && jugador2 !== '') ?
