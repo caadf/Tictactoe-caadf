@@ -26,7 +26,7 @@ const Weapon = () => {
             board[index] = seleccionArma
             setTablero(board)
             if (seleccionArma === "X") {
-                setSeleccionArma("0")
+                setSeleccionArma("O")
             } else {
                 setSeleccionArma("X")
             }
