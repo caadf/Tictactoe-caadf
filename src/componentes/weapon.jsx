@@ -62,9 +62,9 @@ const Weapon = () => {
                     winner ?
                         (total % 2 === 0) ?
 
-                            "Hay ganador:" + jugador2
+                            "Ganador:" + jugador2
                             :
-                            "Hay ganador:" + jugador1
+                            "Ganador:" + jugador1
                         : total === 9 ?
                             "Hay Empate:"
                             : null
